@@ -1,0 +1,204 @@
+:root {
+    --font-family: 'Marvel', sans-serif;
+    --font-family2: 'Oswald', sans-serif;
+    --bg: #202020;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0; 
+    --vermelho-marvel: #e23636;
+  }
+.todos-os-personagens{
+  margin: 2em;
+}
+.personagem{
+    display: inline-block;
+    padding: 2em 1em;
+}
+.botao-personagem{
+  width: 194px;
+  height: 259px;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.imagem-personagem{
+  width: 194px;
+  height: 259px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+}
+.body-secundario{
+    color: var(--bg);
+    background-color: var(--branco-principal)
+}
+.lista-filtro{
+    list-style: none;
+    padding: 0;
+}
+
+h3{
+  color: var(--bg);
+  text-transform: uppercase;
+}
+select{
+  width: 200px;
+}
+.filtro{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.item-filtro{
+    margin: 0;
+    display: inline;
+    padding: 1.8em;
+}
+h4{
+    text-transform: uppercase;
+    padding: 0.9em 0;
+}
+.campo-busca{
+    width: 350px;
+    border: none;
+    display: inline;
+}
+input, select, option{
+    font-family: var(--font-family2);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .conteudo-modal {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .fechar {
+    color: #aaa; 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .fechar:hover,
+  .fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .personagem-modal{
+    display: grid;
+    grid-template-columns:33% 66%;
+    margin: 2em;
+  }
+.nome-heroi-modal{
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align:left;
+}
+.bio-personagem{
+  font-size: 18px;
+  padding: 0;
+  display:grid;
+  text-align: justify;
+  margin-left: 2em;
+}
+.imagem-personagem-modal{
+  padding: 0;
+  display:grid;
+  max-width: 100%;
+  text-align: justify;
+  margin-right: 2em;
+}
+.gibi-modal{
+  padding: 1em;
+  margin: 2em 0;
+  width: 194px;
+  height: 259px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.img-gibi-modal{
+  width: 194px;
+  height: 259px;
+  margin: 0;
+}
+.lista-gibis-modal{
+  margin: 0;
+  padding: 2em 0;
+}
+.gibis-modal{
+  background-color: var(--bg);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1em;
+}
+.gibi-modal:hover{
+    scale: 105%;
+}
+li{
+  list-style: none;
+}
+.line::after {
+  content: " ";
+  background-color: thistle;
+  display: block;
+  height: 5px;
+  width: 100%;
+}
+.titulo-gibis-modal{
+  text-transform: uppercase;
+  color: var(--vermelho-marvel);
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+h6{
+  color: var(--branco-principal);
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+/* paginação*/
+.pagination {
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.botao-paginacao{
+  border-radius: 5px;
+  border: 1px solid var(--bg);
+  color: var(--branco-principal);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: var(--bg);
+  font-size: 18px;
+}

@@ -1,0 +1,45 @@
+:root {
+    --font-family: 'Marvel', sans-serif;
+    --font-family2: 'Oswald', sans-serif;
+    --bg: #202020;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0; 
+  }
+.header-principal{
+    grid-template-rows: 50% 50%;
+    background-color: var(--bg);
+    width: 100%;
+    height: 120px;
+    position: static;
+    box-sizing: border-box; /* Faz com que não exceda o tamanho configurado no width/height*/
+    text-align: center;
+    overflow: hidden; /* faz o div não aumentar a altura por conta da imagem*/
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.logo-menor{
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.lista-enderecos{
+    list-style: none;
+    display: grid;
+    margin-top: 1em;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--branco-principal);
+    padding: 0 2em 0.5em 2em;
+}
+hr {
+    margin: 0;
+	border: 0;
+	border-top: 1px solid var(--cinza-secundario);
+}
+
+  

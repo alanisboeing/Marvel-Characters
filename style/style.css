@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-family: 'Marvel', sans-serif;
+    --font-family2: 'Oswald', sans-serif;
+    --bg: #202020;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0; 
+  }
+
+body{
+    color: var(--branco-principal);
+    font-family: var(--font-family2);
+    background-color: var(--bg);
+    text-align: center;
+    width: 1024;
+    height: 768;
+}
+.logo{
+    width:25%;
+    margin-top: 1rem;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+figcaption{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--font-family2);
+    text-transform: uppercase;
+    color:var(--branco-principal);
+    max-width: 180;
+
+}
+figure{
+    display: inline-block;
+    max-width: 180;
+}
+.box-selecionar{
+    grid-template-columns: 25% 25% 25% 25%;
+    display:flex;
+    background-color: var(--bg);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;;
+}
+button:hover{
+    scale: 105%;
+}
+.imagem-botao{
+    width: 200px;
+    height: 300px;
+}
+.botao-selecionar-inicial{
+    padding: 1rem;
+}

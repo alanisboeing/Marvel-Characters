@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cabecalho.css">
+    <link rel="stylesheet" href="style/personagens.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Personagens</title>
+</head>
+<header class="header-principal">
+    <img class=logo-menor src="imagens/logo.png" alt="Logo da Marvel">
+    <hr>
+    <nav>
+        <ul>
+            <li class="lista-enderecos"></li>
+            <a href="">Página inicial</a>
+            <a href="">Personagens</a>
+            <a href="">HQs</a>
+            <a href="">Filmes</a>
+            <a href="">Séries</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body class="body-secundario">
+
+    <section class="filtro">
+        <h4>Filtre os personagens:</h4>
+        <ul class="lista-filtro">
+            <li class="item-filtro busca"><i class="fa-solid fa-magnifying-glass"></i> <input type="search"
+                    placeholder="Pesquise pelo nome do personagem" id="busca-personagem" class="campo-busca">
+            </li>
+            <li class="item-filtro"><select name="hqs" id="seletor-hqs">
+                    <option value="">HQs</option>
+
+                </select>
+            </li>
+            <li class="item-filtro"><select name="filmes" id="seletor-filmes">
+                    <option value="">Filmes</option>
+                </select>
+            </li>
+            <li class="item-filtro"><select name="series" id="seletor-series">
+                    <option value="">Séries</option>
+                </select>
+            </li>
+        </ul>
+    </section>
+
+    <section class="todos-os-personagens" id="todos-os-personagens">
+        <div id="modal" class="modal">
+
+            <span class="fechar">&times;</span>
+            <p class="conteudo-modal"></p>
+
+        </div>
+
+    </section>
+    <section class="pagination">
+        <button class="botao-paginacao">Carregar mais personagens</button>
+    </section>
+    <script type="module" src="js/personagensController.js"></script>
+</body>
+
+</html>
